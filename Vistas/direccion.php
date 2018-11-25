@@ -21,7 +21,10 @@
 // </nav>-->
 // ";
 
-echo"prueba";
+//Inicio de variables de sesión
+if (!isset($_SESSION)) {
+        session_start();
+}
 
 $usu=$_REQUEST['usu'];
 $pass=$_REQUEST['pass'];
