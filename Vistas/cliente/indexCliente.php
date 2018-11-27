@@ -22,6 +22,9 @@ echo"
     <li class='nav-item'>
       <a class='nav-link disabled' href='terminos.php'>Terminos & Condiciones</a>
     </li>
+     <li class='nav-item'>
+      <a class='nav-link disabled' href='cerrarsesion.php'>Cerrar Sesion</a>
+    </li>
   </ul>
 </nav>";
 

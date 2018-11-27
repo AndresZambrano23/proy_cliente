@@ -22,14 +22,14 @@ self.location = "../login.php"
 echo"
 <nav class='navbar navbar-expand-sm bg-dark navbar-dark'>
   <a class='navbar-brand' href='indexRestaurante.php'>
-    <img src='../../img/logo.jpg' alt='Logo' style='width:40px;'>
+    <img src='../../img/logo.jpg' alt='Logo' style='width:40px;'>".$usu."
   </a>
   <ul class='navbar-nav'>
     <li class='nav-item active'>
       <a class='nav-link' href='inicio.php'>Mis Datos</a>
     </li>
     <li>
-      <a class='nav-link' href='producto.php'>Mis Datos</a>
+      <a class='nav-link' href='productos.php'>Productos</a>
     </li>
     <li>
       <a class='nav-link' href='cerrarsesion.php'>Cerrar Sesion</a>

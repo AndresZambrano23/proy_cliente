@@ -40,7 +40,7 @@ function validarusuario(){
 
 	var varusuario = $("#usuario").val();
 	var varpassword = $("#password").val();
-	alert(varpassword);
+	// alert(varpassword);
 	
 	var xmlhttp;
 	if (window.XMLHttpRequest) {
@@ -51,9 +51,9 @@ function validarusuario(){
 
 	xmlhttp.onreadystatechange = function(){
 	if (xmlhttp.readyState == 4 && xmlhttp.status == 200 || xmlhttp.status == 304) {
-		alert('Bienvenido');
-		var mensaje = xmlhttp.responseText;
-		alert(mensaje);
+		// alert('Bienvenido');
+		// var mensaje = xmlhttp.responseText;
+		// alert(mensaje);
 
 		var datos = JSON.parse(xmlhttp.responseText);
 		for (var i in datos) {	

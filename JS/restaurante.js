@@ -12,11 +12,20 @@ if (window.XMLHttpRequest) {
 }
 
 xmlhttp.onreadystatechange = function(){
-	if (this.readyState === 4 && this.status === 200) {
-		resultado.innerHTML = xmlhttp.responseText;
-	} 
-}
-	xmlhttp.open("GET","servidor.php?personas=" + "personas", true);
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				var datos = JSON.parse(xmlhttp.responseText);
+				if(resultado.innerHTML === ""){
+				for(var i in datos){
+					// resultado.innerHTML += "<h5>" + i + "</h5>";
+					var persona = datos[i];
+					for(var j in persona){
+						resultado.innerHTML += j + ": " + persona[j] + "</br>"; 
+					}
+				}
+			}
+				}
+			}
+	xmlhttp.open("GET","http://localhost:82/Essen/Vistas/producto/listar_producto.php", true);
 	xmlhttp.send();
 }
 
@@ -125,4 +134,4 @@ function agregarUsuario(){
 }
 
 //=funcion ejecutada por defecto================
-mostrarUsuarios();
+mostrarProductos();

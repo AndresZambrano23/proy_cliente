@@ -38,9 +38,8 @@ echo"
 </nav>";
 
 echo "
-<div onload='mostrarProductos()'>
-  
-</div>
+<input type='submit' name='' onclick='mostrarProductos();' value='Mostrar Datos'>
+  <div id='info'></div>
 ";
 
 
