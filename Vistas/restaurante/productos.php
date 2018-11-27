@@ -37,46 +37,12 @@ echo"
   </ul>
 </nav>";
 
+echo "
+<div onload='mostrarProductos()'>
+  
+</div>
+";
 
-
-$exibirModal = false;
-
-if(!isset($_COOKIE["mostrarModal"]))
-{
-
-  $expirar = 60; 
-  setcookie('mostrarModal', 'SI', (time() + $expirar)); 
-
-  $exibirModal = true;
-}
-
-/* Modal para el ingreso de los usaurios*/
-
-
-
-echo"
-    <div class='container'>
-      <h2>Pide tu domiclio</h2><br><br>
-      <p class='text-primary'>Somos mas eficientes y mas rapidos que rappi y domicilios.com xD</p> <br><br><br>
-      <img src='../../img/comida.jpg' class='float-left' alt='Comida' width='304' height='236'> 
-      <img src='../../img/essen.png' class='float-center' alt='Essen' width='304' height='236'>
-      <img src='../../img/resturante.jpg' class='float-right' alt='Restaurante' width='304' height='236'> 
-    </div>";
-
-
-/*Mostrar el modal */
-
-
-if($exibirModal === true){
-  echo"
-  <script>
-  $(document).ready(function()
-  {
-    // id de nuestro modal
-    $('#myModal').modal('show');
-  });
-  </script>";
-  }
 
 $footer= footer();
 echo($footer);

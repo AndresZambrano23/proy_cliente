@@ -1,0 +1,33 @@
+[
+	{
+		"id":1,
+		"usuario":"admin",
+		"password":"uniminuto",
+		"tipousuario":1
+	},
+	{
+		"id":2,
+		"usuario":"adminMensajero",
+		"password":"uniminuto",
+		"tipousuario":4
+	},
+
+	{
+		"id":4,
+		"usuario":"adminRestaurante",
+		"password":"uniminuto",
+		"tipousuario":3
+	},
+	{
+		"id":5,
+		"usuario":"adminCliente2",
+		"password":"uniminuto",
+		"tipousuario":1
+	},
+	{
+		"id":6,
+		"usuario":"admin2",
+		"password":"12345",
+		"tipousuario":2
+	}
+]

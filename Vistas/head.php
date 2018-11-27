@@ -18,10 +18,10 @@ function head(){
 
 function footer(){
     $footer ='
+    <script src="../JS/validar_usuario.js" type="text/javascript"></script>
     <script src="../bootstrap-4.0.0/dist/js/jquery-1.11.3.min.js"></script>
     <script src="../bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
     <script src="../JS/registrar_usuario.js" type="text/javascript"></script>
-    <script src="../JS/validar_usuario.js" type="text/javascript"></script>
     </body>
     </html>
     ';

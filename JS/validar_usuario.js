@@ -56,16 +56,19 @@ function validarusuario(){
 		alert(mensaje);
 
 		var datos = JSON.parse(xmlhttp.responseText);
-		for (var i in datos) {				
-			self.location.href='direccion.php?usu='+varusuario+'&pass='+varpassword+
-			'&tip='+datos[i].tipousuario+'&id='+datos[i].id;
-			return false;
+		for (var i in datos) {	
+				if (varusuario === datos[i].usuario && varpassword==datos[i].password) {
+
+				self.location.href='direccion.php?usu='+varusuario+'&pass='+varpassword+
+				'&tip='+datos[i].tipousuario+'&id='+datos[i].id;
+				return false;
+					
+				}
 			}
 		}
 	}
 
-	xmlhttp.open("GET", "http://localhost:82/Essen/Vistas/login_usuario.php?usuario=" + 
-		varusuario + '&password=' + varpassword, true);
+	xmlhttp.open("GET", "datos.json", true);
 	xmlhttp.send();
 
 }
